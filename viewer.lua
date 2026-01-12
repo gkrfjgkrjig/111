@@ -1,7 +1,4 @@
--- viewer.lua - CC屏幕查看器
--- 在CC电脑上显示现实电脑的屏幕
 
--- 检查必要的库
 if not json then
     print("error:json")
     print("CC: Tweaked")
@@ -23,7 +20,7 @@ print()
 local defaultServer = "ws://192.168.1.100:8080"
 local serverUrl = defaultServer
 
-term.write("输入服务器地址 (默认: " .. defaultServer .. "): ")
+term.write("input (default: " .. defaultServer .. "): ")
 local input = read()
 
 if input and input ~= "" then
